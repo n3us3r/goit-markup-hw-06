@@ -561,7 +561,7 @@
                 <form class="modal-form">
 
                         <label class="modal-form-field">
-                            <input class="modal-form-input" type="name" placeholder=" " autocomplete="off">
+                            <input class="modal-form-input" type="name" name="name" placeholder=" " autocomplete="off">
                             <span class="modal-form-label">Имя</span>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use xlink:href="./images/icons.svg#modal-name"/>
@@ -569,7 +569,7 @@
                         </label>
 
                         <label class="modal-form-field">
-                            <input class="modal-form-input" type="tel" placeholder=" " autocomplete="off">
+                            <input class="modal-form-input" type="tel" name="tel" placeholder=" " autocomplete="off">
                             <span class="modal-form-label">Телефон</span>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use xlink:href="./images/icons.svg#modal-phone"/></svg>
@@ -577,7 +577,7 @@
                         </label>
 
                         <label class="modal-form-field">
-                            <input class="modal-form-input" type="email" placeholder=" " autocomplete="off">
+                            <input class="modal-form-input" type="email" name="email" placeholder=" " autocomplete="off">
                             <span class="modal-form-label">Почта</span>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use xlink:href="./images/icons.svg#modal-mail"></use>
@@ -585,13 +585,20 @@
                         </label>
 
                         <label class="modal-form-field">
-                            <textarea class="modal-form-comment" placeholder="Введите текст" name="" rows="10"></textarea>
+                            <textarea class="modal-form-comment" placeholder="Введите текст" name="comment" rows="10"></textarea>
                             <span class="modal-form-comment-label">Комментарий</span>
                         </label>
 
-                        <label class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю 
-                            <a class="modal-form-license" href="">Условия соглашения</a>
-                            <input class="modal-form-checkbox-input" type="checkbox">
+                        <label class="modal-form-checkbox">
+                            <input class="modal-form-checkbox-input visually-hidden" type="checkbox">
+                            
+                            <svg class="modal-form-checkbox-icon" width="16px" height="15px">
+                                <use xlink:href="./images/icons.svg#checkmark"></use>
+                            </svg>
+                            
+                            <span class="modal-form-checkbox-box"></span>
+
+                            Соглашаюсь с рассылкой и принимаю <a class="modal-form-license" href="">Условия договора</a>
                         </label>
 
 
