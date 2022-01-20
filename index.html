@@ -512,56 +512,13 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-btn-close" data-modal-close>
-                    <svg class="modal-close-icon">
-                        <use xlink:href="./images/icons.svg#close-icon"/>
-                    </svg>
-                </button>
-
-                <!-- <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                 
-                <form class="modal-form" action="">
-
-                    <div class="modal-form-field">
-                        <input class="modal-form-input" type="name" placeholder="Имя" autocomplete="off">
-                        <label class="modal-form-label" for=""></label>
-                    </div>
-
-                    <div class="modal-form-field">
-                        <svg width="13" height="13">
-                            <use xlink:href="./images/icons.svg#modal-phone"/>
-                        </svg>
-                        <input class="modal-form-input" type="tel" placeholder="Телефон" autocomplete="off">
-                        <label class="modal-form-label" for=""></label>
-                    </div>
-                    
-                    <div class="modal-form-field">
-                        <input class="modal-form-input" type="email" placeholder="Почта" autocomplete="off">
-                        <label class="modal-form-label" for=""></label>
-                    </div>
-                    
-                    <div class="modal-form-field">
-                        <textarea class="modal-form-comment" name="" id="" rows="10"></textarea>
-                        <label for=""></label>
-                    </div>
-                    
-                    <div class="modal-form-field">
-                        <input class="modal-form-checkbox-input" type="checkbox" id="checkbox">
-                        <label class="modal-form-checkbox-label" for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия соглашения</a></label>
-                    </div>
-
-                    <button class="modal-form-button" type="submit">
-                        Отправить
-                    </button>
-                </form> -->
-
-
                 <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                 
                 <form class="modal-form">
 
                         <label class="modal-form-field">
-                            <input class="modal-form-input" type="name" name="name" placeholder=" " autocomplete="off">
+                            <input class="modal-form-input" type="text" name="name" placeholder=" " autocomplete="off">
                             <span class="modal-form-label">Имя</span>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use xlink:href="./images/icons.svg#modal-name"/>
@@ -572,7 +529,7 @@
                             <input class="modal-form-input" type="tel" name="tel" placeholder=" " autocomplete="off">
                             <span class="modal-form-label">Телефон</span>
                             <svg class="modal-form-icon" width="18" height="18">
-                                <use xlink:href="./images/icons.svg#modal-phone"/></svg>
+                                <use xlink:href="./images/icons.svg#modal-phone"></use>
                             </svg>
                         </label>
 
@@ -589,23 +546,37 @@
                             <span class="modal-form-comment-label">Комментарий</span>
                         </label>
 
+
                         <label class="modal-form-checkbox">
-                            <input class="modal-form-checkbox-input visually-hidden" type="checkbox">
-                            
+                            <input class="modal-form-checkbox-input" type="checkbox">
+                        
+                            <svg class="modal-form-empty-icon" width="16px" height="15px">
+                                <use xlink:href="./images/icons.svg#empty-check"/>
+                            </svg>
+
+                            <!-- <span class="modal-test"></span> -->
+
                             <svg class="modal-form-checkbox-icon" width="16px" height="15px">
                                 <use xlink:href="./images/icons.svg#checkmark"></use>
                             </svg>
+                    
+                            <span class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю</span>
+                            <a class="modal-form-license" href="">Условия договора</a>
                             
-                            <span class="modal-form-checkbox-box"></span>
-
-                            Соглашаюсь с рассылкой и принимаю <a class="modal-form-license" href="">Условия договора</a>
                         </label>
-
+                    
 
                         <button class="modal-form-button" type="submit">
                             Отправить
                         </button>
                 </form>
+
+                <button class="modal-btn-close" data-modal-close>
+                    <svg class="modal-close-icon">
+                        <use xlink:href="./images/icons.svg#close-icon"/>
+                    </svg>
+                </button>
+
             </div>
         </div>
         <script src="./scripts/modal.js"></script>
